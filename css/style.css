@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Regular.eot');
+    src: url('/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Lato-Regular.ttf') format('truetype'),
+    url('/fonts/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Black.eot');
+    src: url('/fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Montserrat-Black.ttf') format('truetype'),
+    url('/fonts/Montserrat-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+*{
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topContainer {
+    background:#43cb83 url("/img/Геометрический_фон.png") ;
+    max-width: 100%;
+    max-height: 659px;
+    position: relative;
+}
+#myTopnav {
+    float: right;
+    margin: 50px 12% 50px 0;
+    position: relative;
+}
+.topnav > a{
+    margin-right: 70px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+}
+.topnav > a:hover{
+    display: flex;
+    color: #43cb83;
+    background: #FFFFFF ;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    padding: 15px 40px;
+    -webkit-transition: all 0.3s ease;
+}
+.topnav {
+    display: flex;
+    text-decoration: none;
+}
+.topnav:hover {
+    text-decoration: none;
+}
+#img1{
+    width: 80%;
+    margin: -150px 0 0 50px;
+}
+.discount {
+    display: flex;
+    color: #ffffff;
+}
+.discountH1{
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 55px;
+    line-height: 30px;
+}
+.discountH2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 37px;
+    margin-bottom: 35px;
+    margin-right: 210px;
+
+}
+.discountH3{
+    font-weight: 400;
+    margin-right: 210px;
+}
+.midContainer{
+    background: #FFFFFF;
+    position: relative;
+}
+.midTitle>p {
+    display: flex;
+    justify-content: center;
+    margin:73px 0;
+    z-index: 10;
+    font-size: 36px;
+    font-weight: 700;
+    color: #282828;
+}
+#firstImg {
+    position: relative;
+    z-index: 3;
+    margin: 50px 0 0 100px ;
+    max-height: 50%;
+    max-width: 50%;
+}
+#menu{
+    display: none;
+}
+@media screen and (max-width: 1568px ){
+    #img1{
+        height: auto;
+        width: 80%;
+        margin: -100px 0 0 0 ;
+    }
+}
+@media screen and (max-width: 1050px ){
+    #myTopnav{
+        float: left;
+        margin: 0;
+    }
+    #img1{
+        display: none;
+    }
+    #firstImg{
+        display: none;
+    }
+    #discText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0;
+        padding: 0;
+    }
+    .discountH1{
+        line-height: 40px;
+    }
+    .discount{
+        padding: 0;
+        text-align: center;
+    }
+    .discountH3{
+        margin: 0 20px 15px 20px;
+        line-height: 20px;
+    }
+    .discountH2{
+        margin: 0 20px 15px 20px;
+    }
+    .topnav>a{
+        display: none;
+        margin: 0;
+    }
+    #menu{
+        position: absolute;
+        display: block;
+        padding: 10px 15px;
+        z-index: 5;
+        margin: 10px 15px 0 0;
+    }
+    .topnav.responsive a{
+        position: relative;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+}
+.formBeacon{
+    position: relative;
+    display: block;
+    border: 1px solid #e3e3e3;
+    margin: 0 5px;
+    max-width: 23%;
+    text-align: center;
+    z-index: 12;
+}
+#asensor{
+    position: absolute;
+    left: 35%;
+    top:15% ;
+}
+#arm{
+    position: absolute;
+    left: 27%;
+    top:15% ;
+}
+#esti{
+    position: absolute;
+    left: 20%;
+    top:10% ;
+    z-index: 1;
+}
+#i227{
+    position: absolute;
+    left: 26%;
+    top:16% ;
+}
+.formBeacon>h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+.formBeacon>p {
+    max-height: 200px;
+}
+.pay{
+    color: #515461;
+    font-family: Montserrat, sans-serif;
+    font-size: 29px;
+    font-weight: 400;
+    margin: 250px 0 0;
+}
+.calc {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e3e3e3;
+    align-items: flex-end;
+}
+.calc>a>img {
+    margin: -5px 7px;
+}
+#minusPng {
+    margin: 10px;
+}
+.beacon>.formBeacon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.beacon>.formBeacon >img {
+    margin: auto;
+}
+
+.beacon{
+    margin-bottom: 50px;
+}
