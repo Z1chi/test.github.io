@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'Lato';
-    src: url('/fonts/Lato-Regular.eot');
-    src: url('/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/Lato-Regular.ttf') format('truetype'),
-    url('/fonts/Lato-Regular.woff') format('woff');
+    src: url('./fonts/Lato-Regular.eot');
+    src: url('./fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Lato-Regular.ttf') format('truetype'),
+    url('./fonts/Lato-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat-Black.eot');
-    src: url('/fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/Montserrat-Black.ttf') format('truetype'),
-    url('/fonts/Montserrat-Black.woff') format('woff');
+    src: url('./fonts/Montserrat-Black.eot');
+    src: url('./fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Montserrat-Black.ttf') format('truetype'),
+    url('./fonts/Montserrat-Black.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,7 +27,7 @@
 }
 
 .topContainer {
-    background: #43cb83 url("/img/Геометрический_фон.png");
+    background: #43cb83 url("../img/Геометрический_фон.png");
     max-width: 100%;
     max-height: 659px;
     position: relative;
@@ -409,7 +409,7 @@
     color: #2c2c2c;
 }
 .formContainer {
-    background: #43cb83 url("/img/Фон.png") ;
+    background: #43cb83 url("../img/Фон.png") ;
     position: relative;
     display: block;
     float: left;
