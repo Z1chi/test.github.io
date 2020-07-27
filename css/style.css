@@ -496,7 +496,7 @@
 }
 .footer{
     position: relative;
-    background: #43cb83 url("/img/Фон1.png");
+    background: #43cb83 url("../img/Фон1.png");
     z-index: 0;
     display: block;
     float: left;
