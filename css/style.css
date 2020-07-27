@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'Lato';
-    src: url('./fonts/Lato-Regular.eot');
-    src: url('./fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/Lato-Regular.ttf') format('truetype'),
-    url('./fonts/Lato-Regular.woff') format('woff');
+    src: url('/fonts/Lato-Regular.eot');
+    src: url('/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Lato-Regular.ttf') format('truetype'),
+    url('/fonts/Lato-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('./fonts/Montserrat-Black.eot');
-    src: url('./fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/Montserrat-Black.ttf') format('truetype'),
-    url('./fonts/Montserrat-Black.woff') format('woff');
+    src: url('/fonts/Montserrat-Black.eot');
+    src: url('/fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Montserrat-Black.ttf') format('truetype'),
+    url('/fonts/Montserrat-Black.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,7 +27,7 @@
 }
 
 .topContainer {
-    background: #43cb83 url("../img/Геометрический_фон.png");
+    background: #43cb83 url("/img/Геометрический_фон.png");
     max-width: 100%;
     max-height: 659px;
     position: relative;
@@ -151,12 +151,12 @@
     }
 
     .beacon > .formBeacon > .buy {
-        margin: 0 20% 15px 25%;
+        margin: 0 19% 15px 25%;
         padding: 5px 15px;
     }
 
     .beacon > .formBeacon {
-        margin: 15px 50px;
+        margin: 15px 5px;
         max-width: 90%;
         box-sizing: border-box;
     }
@@ -173,6 +173,16 @@
     #myTopnav {
         float: left;
         margin: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+        transition: all 0.3s ease-out;
+
+
     }
 
     #img1 {
@@ -193,7 +203,7 @@
 
     .discountH1 {
         line-height: 50px;
-        margin: 100px 0 50px;
+        margin: 100px 0 10px;
     }
 
     .discount {
@@ -209,12 +219,12 @@
 
     .discountH2 {
         margin: 0 20px 55px 20px;
-        padding: 50px 0 0;
+        padding: 10px 0 0;
         text-align: left;
     }
 
     .topnav > a {
-        display: none;
+        display: flex;
         margin: 0;
 
     }
@@ -225,6 +235,14 @@
         padding: 10px 15px;
         z-index: 5;
         margin: 10px 15px 0 0;
+        top: 0;
+        left: 0;
+        float: none;
+        flex-direction: column;
+        text-align: center;
+        visibility: visible;
+        opacity: 1;
+
     }
 
     .topnav.responsive a {
@@ -232,9 +250,19 @@
         float: none;
         display: flex;
         flex-direction: column;
-        text-align: right;
-    }
+        text-align: center;
+        visibility: visible;
+        opacity: 1;
+        left: auto;
 
+    }
+.topnav>a {
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+}
     body > .topContainer {
         max-height: none;
     }
@@ -242,7 +270,14 @@
     .midTitle > p {
         margin: 55px 10px;
         text-align: center;
+        z-index: 11;
     }
+    .backgroundImg {
+        display: none;
+    }
+}
+.midTitle{
+    z-index: 11;
 }
 
 .formBeacon {
@@ -372,4 +407,148 @@
 .buy:hover {
     text-decoration: none;
     color: #2c2c2c;
+}
+.formContainer {
+    background: #43cb83 url("/img/Фон.png") ;
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+.formh1 {
+    display: flex;
+    justify-content: center;
+
+}
+.backgroundImg>img{
+    height: 100%;
+    height: calc(100% + 44px);
+}
+.backgroundImg {
+    position: absolute;
+    right: -100px;
+    top: -44px;
+    z-index: 2;
+    height: 100%;
+}
+#steph1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #171717;
+}
+.allStep {
+    justify-content: center;
+}
+.allStep>div>p {
+    padding: 10px 25px;
+    font-size: 22px;
+    font-weight: 900;
+}
+.allStep >div {
+    max-width: 140px;
+    display: flex;
+    justify-content: center;
+    margin: 0 30px;
+    z-index: 11;
+}
+#stepActive {
+    box-shadow: 0 15px 29px rgba(60, 171, 112, 0.63);
+    border-radius: 23px;
+    background-color: #ffffff;
+}
+.lorem > p {
+    font-size: 24px;
+    font-weight: 700;
+    z-index: 11;
+    margin: 42px 5% 40px;
+
+}
+.formInput {
+    border: 3px  solid #FFFFFF;
+    border-radius: 26px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 40px;
+    max-width: 650px;
+    margin: 0 auto;
+    width: 100%;
+    font-weight: 800;
+    z-index: 15;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.buttonNext {
+    max-width: 200px;
+    margin: 35px auto;
+    padding: 10px 65px;
+    background-color: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 15px 29px rgba(60, 171, 112, 0.63);
+    font-weight: 600;
+    color: #43cb83;
+    font-size: 27px;
+    line-height: 45px;
+}
+.footer{
+    position: relative;
+    background: #43cb83 url("/img/Фон1.png");
+    z-index: 0;
+    display: block;
+    float: left;
+    width: 100%;
+    background-size: cover;
+}
+.footer>.container>.row>{
+    justify-content: center;
+}
+.footer>.container>.row>.col-md-12>p {
+    display: flex;
+    justify-content: center;
+}
+.absolutImg {
+    position: absolute;
+    left: 0;
+    bottom: -0;
+}
+#justify {
+    justify-content: center;
+}
+.footerSupport {
+    margin: 40px 0 0;
+}
+.footerIconRow {
+   justify-content: center;
+}
+.footerIcon>svg{
+fill: #FFFFFF;
+    width: 40px;
+    height: 40px;
+}
+.row>.footerSupport>p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.footerTerms{
+    text-align: center;
+    justify-content: center;
+
+}
+.footerTerms>a{
+    color: #ffffff;
+    margin: 15px 10px;
+    z-index: 15;
+}
+.footerTerms>a{
+    text-decoration: none;
+}
+.footerTerms>div{
+    color: #ffffff;
 }
